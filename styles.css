@@ -64,7 +64,7 @@ ul {
 
 @media (max-width: 1024px) {
   .main-container {
-    margin: 50px 5%;
+    margin: 20px 5% 10px;
 }
 
 .my-img {
@@ -73,7 +73,7 @@ ul {
 
 .text-section {
   width: 80%;
-  margin: 0 10% 10%;
+  margin: -50px 10% 10%;
   text-align: center;
 }
 
