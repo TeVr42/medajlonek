@@ -103,4 +103,8 @@ h2 {
   font-size: 4rem;
 }
 
+li:hover::after{
+  width: 100%;
+}
+
 }
