@@ -16,7 +16,6 @@ ul {
   list-style-type: none;
 }
 
-
 .main-container {
   margin: 50px 12%;
   background-color: #ffffff;
@@ -46,8 +45,6 @@ ul {
 .my-anchor {
   color: #000000;
   text-decoration: none;
-  padding: 5px;
-  margin-left: 10px;
   padding: 10px;
   transition: 1s;
   transition: color 0.5s ease-in, background-color 1s ease-in;
