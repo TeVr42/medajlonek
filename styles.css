@@ -21,31 +21,26 @@ ul {
   margin: 50px 12%;
   background-color: #ffffff;
   border-radius: 25px;
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .text-section {
   margin: 6%;
-  overflow:hidden;
-  text-overflow: ellipsis;
 }
 
 .my-img {
   margin: 4%;
   width: 100%;
+  content: url(images/ikonka_me.png);
 }
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 1000ms ease-in;
-}
-
-.fade-in.appear {
-  opacity: 1;
-}
-
-.my-anchor:hover {
-  background-color: #A3D2CA;
-  color: #ffffff;
+.my-img:hover {
+  content: url(images/ikonka_me_tmava.png);
 }
 
 .my-anchor {
@@ -55,12 +50,32 @@ ul {
   margin-left: 10px;
   padding: 10px;
   transition: 1s;
+  transition: color 0.5s ease-in, background-color 1s ease-in;
 }
 
-.my-anchor::before, .my-anchor::after {
-  transition: 1s;
+.my-anchor:hover {
+  background-color: #A3D2CA;
+  color: #ffffff;
 }
 
+li {
+  position: relative;
+}
+
+li::after {
+  content:'';
+  position: absolute;
+  background-color: #A3D2CA;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left:0;
+  transition: width 2s;
+}
+
+li:hover::after{
+  width: 70%;
+}
 
 @media (max-width: 1024px) {
   .main-container {
@@ -82,7 +97,7 @@ body {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 6rem;
 }
 h2 {
   font-size: 4rem;
