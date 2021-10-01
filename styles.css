@@ -48,6 +48,7 @@ ul {
   padding: 10px;
   transition: 1s;
   transition: color 0.5s ease-in, background-color 1s ease-in;
+  border: solid 1.5px #A3D2CA;
 }
 
 .my-anchor:hover {
