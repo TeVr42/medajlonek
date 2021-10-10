@@ -1,7 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
 body {
   background-color: #DFF3E3;
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.25rem;
+  padding: 0 12%;
 }
 
 h1 {
@@ -17,7 +29,7 @@ ul {
 }
 
 .main-container {
-  margin: 50px 12%;
+  margin: 50px auto;
   background-color: #ffffff;
   border-radius: 25px;
   animation-name: fade-in;
@@ -76,8 +88,13 @@ li:hover::after{
 }
 
 @media (max-width: 1024px) {
-  .main-container {
-    margin: 20px 5% 10px;
+.main-container {
+  margin: 20px auto 10px;
+}
+  
+  body {
+    padding: 0 5%;
+    font-size: 3rem;
 }
 
 .my-img {
@@ -88,10 +105,6 @@ li:hover::after{
   width: 80%;
   margin: 0 10% 10%;
   text-align: center;
-}
-
-body {
-  font-size: 3rem;
 }
 
 h1 {
