@@ -35,6 +35,8 @@ ul {
   animation-name: fade-in;
   animation-duration: 1s;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
 }
 
 @keyframes fade-in {
@@ -47,12 +49,12 @@ ul {
 }
 
 .my-img {
-  margin: 4%;
+  margin: 10%;
   width: 100%;
-  content: url(images/ikonka_me.png);
+  transition: transform 0.3s ease-in-out;
 }
 .my-img:hover {
-  content: url(images/ikonka_me_tmava.png);
+  transform: scale(1.15);
 }
 
 .my-anchor {
